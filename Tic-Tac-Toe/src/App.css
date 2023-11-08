@@ -1,0 +1,25 @@
+.txt_h1{
+    text-align: center;
+    color: #eee;
+    letter-spacing:0.7rem;
+    margin-top:12vh;
+    font-size:3.5rem;
+    animation-name:header_ani;
+    animation-duration:1.5s;
+}
+
+@keyframes header_ani{
+    0%{
+        transform: translateY(-20vh);
+        opacity:0;
+    }
+    80%{
+        transform: translateY(3vh);
+    }
+ }
+
+ .ani_cell{
+    animation-name: cell_ani;
+    animation-duration:1s;
+}
+

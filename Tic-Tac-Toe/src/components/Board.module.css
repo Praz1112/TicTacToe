@@ -1,0 +1,102 @@
+.board{
+    /* background-color: aqua; */
+    height:fit-content;
+    width:fit-content;
+    margin:10vh auto;
+    margin-top:12vh;
+    border-style: groove;
+    padding:2px;
+    background-color: black;
+    border-color: black;
+    border-radius:5px;
+    animation-name:board_ani;
+    animation-duration:1.5s;
+}
+.cell{
+    border-style: groove;
+    display: inline-flex;
+    height:125px;
+    width:125px;
+    margin:0;
+    border-color: black;
+    padding:0.5px;
+    border-radius:5px;
+    /* border: none; */
+}
+
+.cell  button{
+    height: auto;
+    width: 100%;
+    background-color:grey;
+    font-size:xx-large;
+    color:#eee;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.row{
+    display: block;
+}
+
+ .result{
+    z-index:2;
+    position: absolute;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.45);
+    height:100vh;
+    width:100vw;
+ }
+
+ .txt{
+    background-color: #eee;
+    width:50vw;
+    margin: 37.5vh auto;
+    margin-top:40vh;
+    text-align: center;
+    height:25vh;
+    border-radius:10px;
+    animation-name: result_ani;
+    animation-duration:1s;
+ }
+ .txt h1{
+    padding-top:9vh;
+ }
+
+ .txt button{
+    background-color:grey;
+    border-style:groove;
+    padding:.6rem 1rem;
+    border-radius:5px;
+    color:#eee;
+    font-weight:bolder;
+    font-size: medium;
+    
+ }
+
+.cell_aani{
+    animation-duration:.5s;
+    animation-name:cell_ani;
+}
+
+ @keyframes result_ani{
+    0%{
+        transform: scale(2);
+        opacity:0;
+    }
+ }
+
+ @keyframes board_ani{
+    0%{
+        transform: translateY(-80vh);
+        opacity:0;
+    }
+    75%{
+        transform: translateY(3vh);
+    }
+ }
+
+
+ @keyframes cell_ani{
+    0%{
+        transform: rotateY(220deg);
+    }
+ }
